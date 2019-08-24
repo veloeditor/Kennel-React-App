@@ -1,0 +1,23 @@
+{
+    "animals": [
+        { "id": 1, "name": "Doodles", "breed": "Poodle"},
+        { "id": 2, "name": "Decker", "breed": "German Sheperd" },
+        { "id": 3, "name": "Esme", "breed": "Pitbull" }
+    ],
+    "employees": [
+        { "id": 1, "name": "Mary Smith", "title": "Manager"},
+        { "id": 2, "name": "Charlie Jones", "title": "Assistant Manager"},
+        { "id": 3, "name": "Angela Hughes", "title": "Animal Handler"},
+        { "id": 4, "name": "Karla Goodson", "title": "Animal Handler"}
+    ],
+    "owners": [
+        { "id": 1, "name": "Lori Morgan", "animal": "Doodles"},
+        { "id": 2, "name": "Andrew Stevens", "animal": "Decker"},
+        { "id": 3, "name": "Else Smith", "animal": "Esme"}
+    ],
+    "locations": [
+        { "id": 1, "location": "Nashville North", "address": "123 North Main Street"},
+        { "id": 2, "location": "Nashville South", "address": "1423 Antioch Pike"},
+        { "id": 3, "location": "Bellevue", "address": "451 Old Hickory Blvd."}
+    ]
+}
