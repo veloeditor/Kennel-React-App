@@ -1,23 +1,101 @@
 {
-    "animals": [
-        { "id": 1, "name": "Doodles", "breed": "Poodle"},
-        { "id": 2, "name": "Decker", "breed": "German Sheperd" },
-        { "id": 3, "name": "Esme", "breed": "Pitbull" }
-    ],
-    "employees": [
-        { "id": 1, "name": "Mary Smith", "title": "Manager"},
-        { "id": 2, "name": "Charlie Jones", "title": "Assistant Manager"},
-        { "id": 3, "name": "Angela Hughes", "title": "Animal Handler"},
-        { "id": 4, "name": "Karla Goodson", "title": "Animal Handler"}
-    ],
-    "owners": [
-        { "id": 1, "name": "Lori Morgan", "animal": "Doodles"},
-        { "id": 2, "name": "Andrew Stevens", "animal": "Decker"},
-        { "id": 3, "name": "Else Smith", "animal": "Esme"}
-    ],
-    "locations": [
-        { "id": 1, "location": "Nashville North", "address": "123 North Main Street"},
-        { "id": 2, "location": "Nashville South", "address": "1423 Antioch Pike"},
-        { "id": 3, "location": "Bellevue", "address": "451 Old Hickory Blvd."}
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle",
+      "ownerId": 1,
+      "imgLocation": "./pics/poodle.jpeg"  
+    },
+    {
+      "id": 2,
+      "name": "Decker",
+      "breed": "Golden Retriever",
+      "ownerId": 2,
+      "imgLocation": "./pics/dog.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Esme",
+      "breed": "Pitbull",
+      "ownerId": 3,
+      "imgLocation": "./pics/pitbull.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Gus",
+      "breed": "Border Collie",
+      "ownerId": 3,
+      "imgLocation": "./pics/border.jpg"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Mary Smith",
+      "title": "Manager",
+      "imgLocation": "./pics/employee3.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Charlie Jones",
+      "title": "Assistant Manager",
+      "imgLocation": "./pics/employee1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Angela Hughes",
+      "title": "Animal Handler",
+      "imgLocation": "./pics/employee2.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Karla Goodson",
+      "title": "Animal Handler",
+      "imgLocation": "./pics/employee4.jpg"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Lori Morgan",
+      "phoneNumber": "615-414-2222",
+      "animal": "Doodles",
+      "imgLocation": "./pics/poodle.jpeg" 
+    },
+    {
+      "id": 2,
+      "name": "Andrew Stevens",
+      "phoneNumber": "615-222-3333",
+      "animal": "Decker",
+      "imgLocation": "./pics/dog.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Else Smith",
+      "phoneNumber": "615-333-5554",
+      "animal": "Esme and Gus",
+      "imgLocation": "./pics/border.jpg"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "location": "Nashville North",
+      "address": "123 North Main Street",
+      "imgLocation": "./pics/kennel_1.jpg"
+    },
+    {
+      "id": 3,
+      "location": "Bellevue",
+      "address": "451 Old Hickory Blvd.",
+      "imgLocation": "./pics/kennel_2.jpg"
+    },
+    {
+      "id": 4,
+      "location": "Franklin South",
+      "address": "1234 Highway 96",
+      "imgLocation": "./pics/kennel_4.jpg"
+    }
+  ]
 }
