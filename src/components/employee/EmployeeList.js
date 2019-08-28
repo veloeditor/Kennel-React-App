@@ -36,6 +36,14 @@ import React, { Component } from 'react'
       console.log("EmployeeList: Render");
     
       return(
+        <>
+        <section className="section-content">
+        <button type="button"
+        className="btn"
+        onClick={() => {this.props.history.push("/employee/new")}}>
+        Add Employee
+        </button>
+        </section>
         <div className="container-cards">
           {this.state.employees.map(employee =>
             <EmployeeCard
@@ -45,6 +53,7 @@ import React, { Component } from 'react'
             />
           )}
         </div>
+        </>
       )
     }
 }

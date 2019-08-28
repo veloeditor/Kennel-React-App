@@ -33,10 +33,18 @@ import React, { Component } from 'react'
     }
    
     render(){
-      console.log("AnimalList: Render");
+      console.log("animal obj", this.state.animals);
     
       return(
-        <div className="container-cards">
+        <>
+        <section className="section-content">
+        <button type="button"
+            className="btn"
+            onClick={() => {this.props.history.push("/animals/new")}}>
+            Admit Animal
+        </button>
+      </section>
+      <div className="container-cards">
           {this.state.animals.map(animal =>
             <AnimalCard
               key={animal.id}
@@ -45,6 +53,8 @@ import React, { Component } from 'react'
             />
           )}
         </div>
+        
+      </>
       )
     }
 }

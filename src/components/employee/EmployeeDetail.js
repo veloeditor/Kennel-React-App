@@ -7,6 +7,7 @@ class EmployeeDetail extends Component {
   state = {
       name: "",
       breed: "",
+      loadingStatus: true,
   }
 
   componentDidMount(){
@@ -16,10 +17,18 @@ class EmployeeDetail extends Component {
     .then((employee) => {
       this.setState({
         name: employee.name,
-        title: employee.title
+        title: employee.title,
+        loadingStatus: false
       });
     });
   }
+
+  handleDelete = () => {
+    //invoke the delete function in AnimalManger and re-direct to the animal list.
+    this.setState({loadingStatus: true})
+    EmployeeManager.delete(this.props.employeeId)
+    .then(() => this.props.history.push("/employee"))
+}
 
   render() {
     return (
@@ -30,6 +39,7 @@ class EmployeeDetail extends Component {
           </picture>
             <h3>Name: <span style={{ color: 'darkslategrey' }}>{this.state.name}</span></h3>
             <p>Title: {this.state.title}</p>
+            <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Fire</button>
         </div>
       </div>
     );

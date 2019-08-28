@@ -5,7 +5,7 @@
       "name": "Doodles",
       "breed": "Poodle",
       "ownerId": 1,
-      "imgLocation": "./pics/poodle.jpeg"  
+      "imgLocation": "./pics/poodle.jpeg"
     },
     {
       "id": 2,
@@ -27,6 +27,17 @@
       "breed": "Border Collie",
       "ownerId": 3,
       "imgLocation": "./pics/border.jpg"
+    },
+    {
+      "name": "Rudy",
+      "breed": "Mix",
+      "id": 5,
+      "imgLocation": "./pics/dog5.jpg"
+    },
+    {
+      "name": "Toby",
+      "breed": "Comfort Lab",
+      "id": 6
     }
   ],
   "employees": [
@@ -50,9 +61,15 @@
     },
     {
       "id": 4,
-      "name": "Karla Goodson",
+      "name": "Karl Goodson",
       "title": "Animal Handler",
       "imgLocation": "./pics/employee4.jpg"
+    },
+    {
+      "name": "Karla Goodson",
+      "title": "Chief Animal Handler",
+      "imgLocation": "./dog.svg",
+      "id": 5
     }
   ],
   "owners": [
@@ -61,7 +78,7 @@
       "name": "Lori Morgan",
       "phoneNumber": "615-414-2222",
       "animal": "Doodles",
-      "imgLocation": "./pics/poodle.jpeg" 
+      "imgLocation": "./pics/poodle.jpeg"
     },
     {
       "id": 2,
@@ -76,6 +93,12 @@
       "phoneNumber": "615-333-5554",
       "animal": "Esme and Gus",
       "imgLocation": "./pics/border.jpg"
+    },
+    {
+      "name": "Rob Thomas",
+      "animal": "Sissy",
+      "phoneNumber": "615-414-0011",
+      "id": 4
     }
   ],
   "locations": [
@@ -96,6 +119,12 @@
       "location": "Franklin South",
       "address": "1234 Highway 96",
       "imgLocation": "./pics/kennel_4.jpg"
+    },
+    {
+      "location": "Smyrna",
+      "address": "3425 Murfreesboro Pike",
+      "imgLocation": "./dog.svg",
+      "id": 5
     }
   ]
 }

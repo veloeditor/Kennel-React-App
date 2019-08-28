@@ -36,7 +36,15 @@ import React, { Component } from 'react'
       console.log("OwnerList: Render");
     
       return(
-        <div className="container-cards">
+        <>
+        <section className="section-content">
+        <button type="button"
+            className="btn"
+            onClick={() => {this.props.history.push("/owner/new")}}>
+            Add Owner
+        </button>
+      </section>
+      <div className="container-cards">
           {this.state.owners.map(owner =>
             <OwnerCard
               key={owner.id}
@@ -45,6 +53,7 @@ import React, { Component } from 'react'
             />
           )}
         </div>
+        </>
       )
     }
 }

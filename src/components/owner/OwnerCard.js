@@ -6,9 +6,13 @@ class OwnerCard extends Component {
     return (
       <div className="card">
         <div className="card-content">
-          <picture>
-          <img src={require(`${this.props.owner.imgLocation}`)} alt="My Dog" />
-          </picture>
+        {this.props.owner.imgLocation === undefined || this.props.owner.imgLocation === ""
+         ?<picture>
+         <img src={require('./dog.svg')} alt="My Dog" />
+         </picture>  
+         :<picture>
+         <img src={require(`${this.props.owner.imgLocation}`)} alt="My Dog" />
+         </picture>  }
           <h2>Name: <span className="card-ownername">{this.props.owner.name}</span></h2>
             <p>Animal: {this.props.owner.animal}</p>
             <p>Phone Number: {this.props.owner.phoneNumber}</p>

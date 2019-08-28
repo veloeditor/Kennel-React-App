@@ -36,7 +36,15 @@ import React, { Component } from 'react'
       console.log("LocationList: Render");
     
       return(
-        <div className="container-cards">
+        <>
+        <section className="section-content">
+        <button type="button"
+            className="btn"
+            onClick={() => {this.props.history.push("/location/new")}}>
+            Add Location
+        </button>
+      </section>
+      <div className="container-cards">
           {this.state.locations.map(location =>
             <LocationCard
               key={location.id}
@@ -45,6 +53,7 @@ import React, { Component } from 'react'
             />
           )}
         </div>
+        </>
       )
     }
   }

@@ -4,8 +4,8 @@ class Home extends Component {
   render() {
     return (
       <address>
-        Visit Us at the Nashville North Location
-        <br />500 Puppy Way
+        <br></br>
+        Visit Us at one of our four Nashville-area locations!
       </address>
     )
   }
